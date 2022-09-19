@@ -9,7 +9,7 @@
 
     <div class="logotipo-container">
         <div id="container-logo">
-            <div id="logotipo">
+            <div (click)="logoClique()" id="logotipo">
                 <span id="link-logotipo">GAME MANIA</span>
                 <a href="./index.html">
                     <div id="shadow-logotipo"></div>
@@ -31,7 +31,7 @@
 
     <div id="top-right-box">
         <span id="login"><a href="#" target="_blank">Fazer Login</a></span>
-        <span id="menu"><a href="#" target="_self">Menu</a></span>
+        <span id="menu" (click)="menuClique()"><a href="#" target="_self">Menu</a></span>
         <span id="cadastro"><a href="#" target="_blank">Cadastrar-se</a></span>
         <span id="buscar"><a href="#" target="_self">Buscar</a></span>
     </div>
