@@ -1,0 +1,636 @@
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #0025aa;
+    border-bottom: 3px solid black;
+}
+
+.flex-container-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simbolo-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+}
+
+#simbolo {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 70pt;
+    position: relative;
+    left: 50px;
+    top: 7px;
+}
+
+#simbolo a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#shadow-simbolo {
+    position: relative;
+    top: -105px;
+    height: 70px;
+    width: 90px;
+    box-shadow: inset #0025aaa9 0 -30px 15px;
+}
+
+#linha-left {
+    width: 3.8%;
+    height: 100%;
+    border-left: 3px solid black;
+    position: relative;
+    left: 30%;
+}
+
+
+#container-logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 0px;
+    top: -7px;
+    margin: 0 auto;
+}
+
+#logotipo {
+    font-size: 90pt;
+    font-family: 'Alumni Sans', sans-serif;
+    width: 500px;
+    height: 100px;
+
+}
+
+#logotipo span {
+    color: white;
+    text-decoration: none;
+}
+
+
+#shadow-logotipo {
+    width: 453px;
+    height: 100px;
+    position: relative;
+    top: -135px;
+    box-shadow: inset #0025aab4 0px -45px 18px 0px;
+}
+
+#logotipo a {
+    display: block;
+    height: 5px;
+}
+
+/* Navbar Start */
+
+nav {
+    background-color: #EC3219;
+    height: 35%;
+    border: 1px solid black;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
+
+nav div {
+    height: 100%;
+}
+
+nav div a,
+nav div input {
+    padding: 0 10px;
+    border: 1px solid black;
+}
+
+nav div a,
+nav input {
+    font-size: 10pt;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#barra-de-busca {
+    background: none;
+    margin: 0;
+    height: 100%;
+}
+
+nav input::placeholder {
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+nav div a:hover {
+    color: #0025AA;
+    font-weight: 600;
+}
+
+.row #flex-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#menu {
+    display: none;
+}
+
+/* Navbar End */
+
+.menu {
+    position: fixed;
+    top: 0;
+    height: 500px;
+    width: 400px;
+    background-color: #0025AA;
+    z-index: 10;
+    border: 3px solid #ec3219;
+    border-radius: 0 0 50px 0;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.menu a {
+    font-size: 25px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    margin: 15px;
+    border-bottom: 4px #EC3219 solid;
+}
+
+.menu a:hover {
+    color: #EC3219;
+    font-weight: 600;
+}
+
+.barra-de-busca-aparece {
+    display: none;
+    margin: 0 10% 0 10%;
+    background-color: #EC3219;
+    position: fixed;
+    width: 80vw;
+    top: 235px;
+    z-index: 20;
+    color: white;
+    padding-left: 20px;
+    height: 120px;
+    font-size: 40px;
+    border: 4px solid #0025AA;
+    border-radius: 0px 0px 15px 0px;
+}
+
+.barra-de-busca-aparece::placeholder {
+    color: white;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+.fonte-menor {
+    font-size: 10.1pt;
+}
+
+#top-right-box {
+    background-color: #0025aa;
+    height: 100%;
+    width: 300px;
+    border-left: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#top-right-box span a {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18pt;
+    text-decoration: none;
+
+}
+
+
+#buscar {
+    display: none;
+}
+
+#login {
+    border-bottom: 0.5px solid black;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cadastro {
+    width: 100%;
+    height: 50%;
+    border-top: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 403px) {
+
+    /* HEADER */
+
+    nav {
+        display: none;
+    }
+
+    #container-logo {
+        position: relative;
+        top: -30px !important;
+        left: 20px !important;
+    }
+
+    #logotipo {
+        width: 200px !important;
+    }
+
+    #shadow-logotipo {
+        width: 150px;
+        position: relative;
+        top: -120px;
+    }
+
+    #link-logotipo {
+        font-size: 40px;
+    }
+
+    #simbolo a {
+        font-size: 35px;
+    }
+
+    #simbolo {
+        position: relative;
+        top: -5%;
+        left: 8%;
+    }
+
+    #shadow-simbolo {
+        position: relative;
+        top: -61%;
+        width: 50px;
+        left: 1%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 0% !important;
+    }
+
+
+    #top-right-box {
+        width: 10%;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 5px !important;
+        text-align: center;
+    }
+
+    header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    header #login a {
+        width: 100%;
+    }
+
+    header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+        border-bottom: 0.5px solid black;
+    }
+
+    #buscar {
+        display: flex !important;
+        border-top: solid black 0.5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #buscar a {
+        color: #EC3219 !important;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (min-width: 404px) and (max-width: 575px) {
+
+    /* HEADER */
+
+    nav {
+        display: none;
+    }
+
+    #container-logo {
+        position: relative;
+        left: 6%;
+    }
+
+    #logotipo {
+        width: 250px;
+    }
+
+    #shadow-logotipo {
+        width: 250px;
+        position: relative;
+        top: -125px;
+    }
+
+    #link-logotipo {
+        font-size: 60px;
+    }
+
+    #simbolo a {
+        font-size: 60px;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 8%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 0% !important;
+    }
+
+    #top-right-box {
+        width: 20%;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 9px !important;
+        text-align: center;
+    }
+
+    header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    header #login a {
+        width: 100%;
+    }
+
+    header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+        border-bottom: 0.5px solid black;
+    }
+
+    #buscar {
+        display: flex !important;
+        border-top: solid black 0.5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #buscar a {
+        color: #EC3219 !important;
+        padding: 10px 0px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    /* HEADER */
+
+    nav {
+        display: none;
+    }
+
+    #container-logo {
+        position: relative;
+        left: 10%;
+    }
+
+    #logotipo {
+        width: 400px;
+    }
+
+    #shadow-logotipo {
+        width: 340px;
+    }
+
+    #link-logotipo {
+        font-size: 90px;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 5%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 10% !important;
+    }
+
+
+    #top-right-box {
+        width: 20%;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 9px !important;
+        text-align: center;
+    }
+
+    header #menu {
+        display: flex !important;
+        width: 100%;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    header #login a {
+        width: 100%;
+    }
+
+    header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+        border-bottom: 0.5px solid black;
+    }
+
+    #buscar {
+        display: flex !important;
+        border-top: solid black 0.5px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #buscar a {
+        color: #EC3219 !important;
+        padding: 10px 0px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    /* HEADER */
+
+    .row a {
+        display: none !important;
+    }
+
+    input#barra-de-busca {
+        width: 100%;
+    }
+
+    .container .row input {
+        font-size: 20px !important;
+    }
+
+    #simbolo {
+        position: relative;
+        left: 5%;
+    }
+
+    #linha-left {
+        position: relative;
+        left: 8% !important;
+    }
+
+    #top-right-box {
+        width: 20%;
+    }
+
+    #top-right-box span a {
+        font-weight: 500;
+        font-size: 10pt !important;
+        text-align: center;
+    }
+
+    header div span#menu {
+        display: flex !important;
+        width: 100% !important;
+        border-top: 0.5px solid black;
+        border-bottom: 0.5px solid black;
+        justify-content: center;
+        padding: 10px 0px;
+    }
+
+    #menu a {
+        color: #EC3219 !important;
+    }
+
+    header #login {
+        border-bottom: 0.5px solid black;
+        padding: 0px 10px;
+    }
+
+    header #login a {
+        width: 110px;
+    }
+
+    header #cadastro {
+        border-top: 0.5px solid black;
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+    /* HEADER */
+
+    nav {
+        height: 35px;
+    }
+
+    nav div a,
+    nav input {
+        font-size: 8px !important;
+    }
+
+    #top-right-box {
+        width: 20%;
+    }
+
+    #top-right-box span a {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    /* HEADER */
+
+    nav div a,
+    nav input {
+        font-size: 12px !important;
+    }
+
+    #top-right-box {
+        width: 20%;
+    }
+
+
+}
