@@ -2,7 +2,7 @@
 
     <!--Houve um problema para exportar as imagens do símbolo e do logo, portanto escolhi fazê-las como texto no HTML e estilizar com o CSS-->
     <div class="simbolo-container">
-        <span id="simbolo"><a href="index.html">GM<div id="shadow-simbolo"></div></a></span>
+        <span id="simbolo"><a routerLink="">GM<div id="shadow-simbolo"></div></a></span>
         <span id="linha-left"></span>
     </div>
 
@@ -11,7 +11,7 @@
         <div id="container-logo">
             <div (click)="logoClique()" id="logotipo">
                 <span id="link-logotipo">GAME MANIA</span>
-                <a href="./index.html">
+                <a routerLink="">
                     <div id="shadow-logotipo"></div>
                 </a>
             </div>
@@ -30,7 +30,7 @@
     </div>
 
     <div id="top-right-box">
-        <span id="login"><a href="#" target="_blank">Fazer Login</a></span>
+        <span id="login"><a routerLink="/login">Fazer Login</a></span>
         <span id="menu" (click)="menuClique()"><a href="#" target="_self">Menu</a></span>
         <span id="cadastro"><a href="#" target="_blank">Cadastrar-se</a></span>
         <span id="buscar"><a href="#" target="_self">Buscar</a></span>
