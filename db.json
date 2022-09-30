@@ -7,7 +7,7 @@
     },
     {
       "email": "bb@bb",
-      "password": "$2a$10$AT0VC7cpaKUY7MnQN.ysKeIdNpJC7ng43dKByJJVLP5l2KbM1BSDG",
+      "password": "$2a$10$AT0VC7cpaKUY7MnQN.ysKeIdNpJC7ng43dKByJJVLP5l2KbM1BSDG", 
       "id": 2
     },
     {
@@ -17,3 +17,4 @@
     }
   ]
 }
+
